@@ -1,0 +1,99 @@
+{
+  "_readme": "Every number the dashboard displays that could ever change. Claude Code overwrites this file from the Apify dataset, commits, Vercel redeploys. The dashboard reads it on load and re-reads it when 'Sync all stats' is clicked. Keep the shape identical — only values change.",
+  "_src_key": {
+    "apify": "Public data. apify/instagram-scraper can fill this automatically.",
+    "manual": "Private Instagram Insights (reach, impressions, profile views, shares, saves). Not scrapeable — type these in by hand.",
+    "fixed": "Historical record or a target we set. Do not overwrite on sync."
+  },
+
+  "syncedAt": "Aug 22, 2026 · 9:14 AM",
+  "handle": "@thefarmevents",
+  "heroChip": "+180% week over week",
+
+  "profile": {
+    "src": "apify",
+    "posts": "38",
+    "followers": "4,694",
+    "following": "812"
+  },
+
+  "hero": [
+    { "label": "Views", "value": "6,460", "unit": "", "week": "+180% w/w", "base": "2.8× baseline", "why": "Up from 2,311 the prior week.", "src": "manual" },
+    { "label": "Accounts reached", "value": "~1,900", "unit": "", "week": "26× prior week", "base": "11× baseline", "why": "Cold reach — not existing followers.", "src": "manual" },
+    { "label": "Interactions", "value": "123", "unit": "", "week": "9× prior week", "base": "9× baseline", "why": "Likes, saves, shares, comments.", "src": "manual" },
+    { "label": "Reel reach", "value": "723", "unit": "", "week": "First ever", "base": "Beats 12-mo median (615)", "why": "Reels keep earning for weeks.", "src": "apify" },
+    { "label": "Followers", "value": "4,694", "unit": "", "week": "+9 this week", "base": "+9 since baseline", "why": "Follows trail visibility by weeks.", "src": "apify" }
+  ],
+
+  "days": {
+    "src": "manual",
+    "label": "Accounts reached per day, last 7 days",
+    "values": [
+      { "label": "Mon", "v": 118 },
+      { "label": "Tue", "v": 196 },
+      { "label": "Wed", "v": 342 },
+      { "label": "Thu", "v": 288 },
+      { "label": "Fri", "v": 251 },
+      { "label": "Sat", "v": 397 },
+      { "label": "Sun", "v": 319 }
+    ]
+  },
+
+  "scoreboard": [
+    { "label": "First-ever Reel", "value": "723", "unit": "reach", "chip": "Beats 12-mo median (615)", "src": "apify" },
+    { "label": "Total interactions", "value": "123", "unit": "", "chip": "9× prior week", "src": "manual" },
+    { "label": "Shares", "value": "21", "unit": "", "chip": "The strongest signal", "src": "manual" },
+    { "label": "Engagement rate", "value": "3.3", "unit": "%", "chip": "Holding as volume scales", "src": "apify" }
+  ],
+
+  "donut": [
+    { "label": "likes", "value": 73, "color": "#6C1E27", "src": "apify" },
+    { "label": "comments & other", "value": 24, "color": "#D8CBBE", "src": "apify" },
+    { "label": "shares", "value": 21, "color": "#6F7355", "src": "manual" },
+    { "label": "saves", "value": 5, "color": "#2E2622", "src": "manual" }
+  ],
+
+  "igPosts": {
+    "_src": "apify — metric is play count for Reels, like count otherwise. img paths stay as-is unless new assets are added.",
+    "Grid": [
+      { "img": "assets/pasture-horses.jpg", "badge": "▶", "metric": "723" },
+      { "img": "assets/pizza-oven.jpg", "badge": "", "metric": "412" },
+      { "img": "assets/chapel-interior.jpg", "badge": "", "metric": "388" },
+      { "img": "assets/firepit.jpg", "badge": "▶", "metric": "355" },
+      { "img": "assets/gathering-place.jpg", "badge": "▣", "metric": "341" },
+      { "img": "assets/chef-plating.jpg", "badge": "", "metric": "318" },
+      { "img": "assets/pavilion-night.jpg", "badge": "▶", "metric": "296" },
+      { "img": "assets/golden-hour-dip.jpg", "badge": "", "metric": "271" },
+      { "img": "assets/autumn-centerpiece.png", "badge": "▣", "metric": "244" }
+    ],
+    "Reels": [
+      { "img": "assets/pasture-horses.jpg", "badge": "▶", "metric": "1.2k" },
+      { "img": "assets/firepit.jpg", "badge": "▶", "metric": "640" },
+      { "img": "assets/pavilion-night.jpg", "badge": "▶", "metric": "512" },
+      { "img": "assets/pizza-oven.jpg", "badge": "▶", "metric": "498" },
+      { "img": "assets/gathering-place.jpg", "badge": "▶", "metric": "333" },
+      { "img": "assets/chef-plating.jpg", "badge": "▶", "metric": "287" }
+    ],
+    "Tagged": [
+      { "img": "assets/golden-hour-dip.jpg", "badge": "", "metric": "204" },
+      { "img": "assets/pavilion-autumn.jpg", "badge": "", "metric": "188" },
+      { "img": "assets/chapel-interior.jpg", "badge": "", "metric": "141" }
+    ]
+  },
+
+  "baseline": [
+    { "label": "Posts in 90 days", "value": "1", "unit": "", "chip": "Effectively silent", "src": "fixed" },
+    { "label": "Reels in 12 months", "value": "0", "unit": "", "chip": "Biggest untapped lever", "src": "fixed" },
+    { "label": "Avg daily reach", "value": "25", "unit": "/day", "chip": "−84% from active pace", "src": "fixed" },
+    { "label": "Followers at baseline", "value": "4,685", "unit": "", "chip": "+43 with zero posts", "src": "fixed" }
+  ],
+
+  "trajectory": [
+    { "label": "Baseline", "when": "Jul 23", "value": 25, "kind": "actual", "src": "fixed" },
+    { "label": "Today", "when": "Aug 22", "value": 273, "kind": "actual", "src": "manual" },
+    { "label": "30 Days", "when": "Sep 22", "value": 318, "kind": "projection", "src": "fixed" },
+    { "label": "90 Days", "when": "Nov 2026", "value": 400, "kind": "target", "src": "fixed" },
+    { "label": "6 Months", "when": "Jan 2027", "value": 620, "kind": "target", "src": "fixed" },
+    { "label": "12 Months", "when": "Jul 2027", "value": 900, "kind": "target", "src": "fixed" }
+  ]
+}
